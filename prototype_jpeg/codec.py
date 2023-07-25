@@ -179,7 +179,7 @@ def encode_huffman(value, layer_type):
                     return (i, j)
         raise ValueError('Cannot find the target value in the table.')
 
-    if not isinstance(value, collections.Iterable):  # DC
+    if not isinstance(value, collections.abc.Iterable):  # DC
         if value <= -2048 or value >= 2048:
             raise ValueError(
                 f'Differential DC {value} should be within [-2047, 2047].'

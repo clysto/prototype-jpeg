@@ -1,8 +1,13 @@
 {
-    "editor.formatOnSave": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.linting.pylintUseMinimalCheckers": false,
-    "python.pythonPath": ".venv/bin/python"
+  "editor.formatOnSave": false,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.pythonPath": ".venv/bin/python",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+  "python.analysis.typeCheckingMode": "off"
 }

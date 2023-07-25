@@ -245,6 +245,6 @@ def extract(file_object, header):  # pylint: disable=too-many-branches, too-many
         'Time elapsed: %.4f seconds', (time.perf_counter() - start_time)
     )
     # Combine layers into signle raw data.
-    return (np.dstack((data.values()))
+    return (np.dstack(list(data.values()))
             .flatten()
             .astype(np.uint8))
